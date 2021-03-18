@@ -124,9 +124,13 @@ public class OFBizQueryBuilder<E extends EntityIdentifiable> {
 			Object value = EntityUtils.toBizValue(type.getJavaType(), keySlot, keyValue);
 			String modelFieldId = ModelUtils.getModelFieldId(keySlot, null);
 			EntityExpr keyExpr = EntityCondition.makeCondition(modelFieldId, value);
-			entityConditions.add(keyExpr);
+			this.entityConditions.add(keyExpr);
 			i++;
 		}
+	}
+
+	protected void addCondition(EntityCondition condition) {
+		this.entityConditions.add(condition);
 	}
 
 	protected void addConditionsExpr(String expression) {
@@ -228,9 +232,10 @@ public class OFBizQueryBuilder<E extends EntityIdentifiable> {
 			dynamicViewEntity.addAlias(entityAlias, modelFieldId, modelField.getName(), null, null, null, null);
 		}
 
+		Frame<?> frameFrom = slot.getFrame();
 		String keyFrom = ModelUtils.getModelFieldId(slot);
 		String keyTo = ModelUtils.getModelFieldId(domainFrame.getAllKeySlots().get(0));
 
-		dynamicViewEntity.addViewLink(this.getFrame().getName(), entityAlias, Boolean.TRUE, ModelKeyMap.makeKeyMapList(keyFrom, keyTo));
+		dynamicViewEntity.addViewLink(frameFrom.getName(), entityAlias, Boolean.TRUE, ModelKeyMap.makeKeyMapList(keyFrom, keyTo));
 	}
 }

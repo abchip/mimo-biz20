@@ -190,7 +190,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 					entity = this.createProxy(id);
 				} else {
 					entity = make();
-					EntityUtils.completeEntity(entity, genericValue);
+					EntityUtils.completeEntity(getContext(), entity, genericValue);
 				}
 			}
 
@@ -254,7 +254,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 					entity = this.createProxy(id);
 				} else {
 					entity = make();
-					EntityUtils.completeEntity(entity, genericValue);
+					EntityUtils.completeEntity(getContext(), entity, genericValue);
 				}
 				entities.add(entity);
 			}

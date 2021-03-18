@@ -145,7 +145,7 @@ public class EdiServices {
 		Resource<EdiFrameSetup> ediFrameSetupResource = context.getResourceSet().getResource(EdiFrameSetup.class);
 		EdiFrameSetup ediFrameSetup = ediFrameSetupResource.make();
 		try {
-			EntityUtils.completeEntity(ediFrameSetup, ofbizEntity);
+			EntityUtils.completeEntity(context, ediFrameSetup, ofbizEntity);
 		} catch (GeneralException e) {
 			throw new ResourceException(e);
 		}
@@ -177,7 +177,7 @@ public class EdiServices {
 		Resource<MessageType> resource = context.getResourceSet().getResource(MessageType.class);
 		MessageType messageType = resource.make();
 		try {
-			EntityUtils.completeEntity(messageType, entityInstance);
+			EntityUtils.completeEntity(context, messageType, entityInstance);
 		} catch (GeneralException e) {
 			throw new ResourceException(e);
 		}
@@ -209,7 +209,7 @@ public class EdiServices {
 
 		EntityIdentifiable entity = (EntityIdentifiable) EcoreUtil.create((EClass) context.getFrame(ofbizEntity.getEntityName()).getEClassifier());
 		try {
-			EntityUtils.completeEntity(entity, ofbizEntity);
+			EntityUtils.completeEntity(context, entity, ofbizEntity);
 		} catch (GeneralException e) {
 			throw new ResourceException(e);
 		}

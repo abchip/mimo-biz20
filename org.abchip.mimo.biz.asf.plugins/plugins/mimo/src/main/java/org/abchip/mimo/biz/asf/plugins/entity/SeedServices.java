@@ -99,7 +99,7 @@ public class SeedServices {
 			Resource<EntityIdentifiable> resource = context.getResourceSet().getResource(genericValue.getEntityName());
 			EntityIdentifiable entityIdentifiable = resource.make();
 			try {
-				EntityUtils.completeEntity(entityIdentifiable, genericValue);
+				EntityUtils.completeEntity(context, entityIdentifiable, genericValue);
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
 			}

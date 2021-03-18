@@ -64,8 +64,6 @@ public class ModelUtils {
 		Set<String> entityNames = new TreeSet<String>();
 		for (String entityName : modelReader.getEntityNames()) {
 			ModelEntity modelEntity = modelReader.getModelEntityNoCheck(entityName);
-			if (modelEntity == null)
-				"".toString();
 
 			if (modelEntity instanceof ModelViewEntity)
 				continue;

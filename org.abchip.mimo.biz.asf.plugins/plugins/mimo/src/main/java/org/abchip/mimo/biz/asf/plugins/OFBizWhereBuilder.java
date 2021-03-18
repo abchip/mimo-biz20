@@ -9,21 +9,20 @@
 package org.abchip.mimo.biz.asf.plugins;
 
 import org.abchip.mimo.entity.EntityIdentifiable;
-import org.abchip.mimo.parser.sqlite.SQLiteParser.Any_nameContext;
-import org.abchip.mimo.parser.sqlite.SQLiteParser.Column_nameContext;
-import org.abchip.mimo.parser.sqlite.SQLiteParser.ExprContext;
-import org.abchip.mimo.parser.sqlite.SQLiteParser.Literal_valueContext;
-import org.abchip.mimo.parser.sqlite.SQLiteParser.NameContext;
+import org.abchip.mimo.entity.Slot;
+import org.abchip.mimo.parser.sqlite.SQLiteLexer;
 import org.abchip.mimo.util.Logs;
 import org.abchip.mimo.util.Strings;
-import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.TerminalNode;
+import org.apache.ofbiz.entity.condition.EntityCondition;
 import org.osgi.service.log.Logger;
 
 public class OFBizWhereBuilder<E extends EntityIdentifiable> extends OFBizQueryListener<E> {
 
 	private static final Logger LOGGER = Logs.getLogger(OFBizWhereBuilder.class);
+
+	private StringBuffer filter = null;
 
 	public OFBizWhereBuilder(OFBizQueryBuilder<E> queryBuilder) {
 		super(queryBuilder);
@@ -38,49 +37,34 @@ public class OFBizWhereBuilder<E extends EntityIdentifiable> extends OFBizQueryL
 	public void visitTerminal(TerminalNode node) {
 
 		Token token = node.getSymbol();
-		System.out.println(token.getText());
-		super.visitTerminal(node);
-	}
+		String text = token.getText();
 
-	@Override
-	public void enterColumn_name(Column_nameContext ctx) {
+		switch (token.getType()) {
+		case SQLiteLexer.K_WHERE:
+			return;
+		case SQLiteLexer.IDENTIFIER:
+			filter = new StringBuffer();
+			Slot slot = this.getQueryBuilder().getFrame().getSlot(text);
+			if (slot.getCardinality().isMultiple()) {
 
-		String text = ctx.getText();
-		this.joinColumnWhere(text);
-	}
+			} else {
+				// ModelUtils.getModelFieldId(slot)
+			}
+			return;
+		case SQLiteLexer.STRING_LITERAL:
 
-	@Override
-	public void enterExpr(ExprContext ctx) {
+			text = Strings.removeFirstChar(text);
+			text = Strings.removeLastChar(text);
+			text = text.replaceAll("'", "''");
+			text = "'" + text + "'";
+			// new EntityExpr(fieldName, EntityOperator.EQUALS, value)
+			EntityCondition where = EntityCondition
+					.makeConditionWhere("Party.PARTY_ID in (SELECT PartyRole.PARTY_ID from public.PARTY_ROLE PartyRole where PartyRole.ROLE_TYPE_ID=" + text + ")");
+			this.getQueryBuilder().addCondition(where);
+			break;
+		default:
+			return;
+		}
 
-		String text = ctx.getText();
-		text = Strings.removeFirstChar(text);
-		text = Strings.removeLastChar(text);
-		text = text.replaceAll("\"", "\''");
-		text = "'" + text + "'";
-
-	}
-
-	@Override
-	public void enterLiteral_value(Literal_valueContext ctx) {
-		// TODO Auto-generated method stub
-		super.enterLiteral_value(ctx);
-	}
-
-	@Override
-	public void enterName(NameContext ctx) {
-		// TODO Auto-generated method stub
-		super.enterName(ctx);
-	}
-
-	@Override
-	public void enterAny_name(Any_nameContext ctx) {
-		// TODO Auto-generated method stub
-		super.enterAny_name(ctx);
-	}
-
-	@Override
-	public void enterEveryRule(ParserRuleContext ctx) {
-		// TODO Auto-generated method stub
-		super.enterEveryRule(ctx);
 	}
 }

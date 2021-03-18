@@ -14,8 +14,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
 
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.data.DataType;
 import org.abchip.mimo.data.EnumDef;
+import org.abchip.mimo.entity.Domain;
+import org.abchip.mimo.entity.Entity;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
@@ -34,36 +37,11 @@ public class EntityUtils {
 
 	public static Slot getSlot(Frame<?> frame, String field) {
 
-		Slot slot = null;
-
-		String[] tokens = field.split("\\.");
-		switch (tokens.length) {
-		case 0:
-			break;
-		case 1:
-			slot = frame.getSlot(field);
-			if (slot == null && field.endsWith("Id")) {
-				slot = frame.getSlot(field.substring(0, field.length() - 2));
-				if (slot != null && slot.getDomain() == null)
-					slot = null;
-			}
-			break;
-		default:
-			for (String token : tokens) {
-				if (Character.isUpperCase(token.charAt(0))) {
-					"".toString();
-				} else {
-					slot = frame.getSlot(token);
-					if (slot == null && token.endsWith("Id")) {
-						slot = frame.getSlot(token.substring(0, token.length() - 2));
-						if (slot != null && slot.getDomain() == null)
-							slot = null;
-					}
-					if(slot != null)
-						break;
-				}
-			}
-			break;
+		Slot slot = frame.getSlot(field);
+		if (slot == null && field.endsWith("Id")) {
+			slot = frame.getSlot(field.substring(0, field.length() - 2));
+			if (slot != null && slot.getDomain() == null)
+				slot = null;
 		}
 
 		return slot;
@@ -83,7 +61,7 @@ public class EntityUtils {
 		Iterator<ModelField> fieldIterator = genericValue.getModelEntity().getFieldsIterator();
 		while (fieldIterator.hasNext()) {
 			ModelField field = fieldIterator.next();
-			Slot slot = EntityUtils.getSlot(frame, field.getName());
+			Slot slot = getSlot(frame, field.getName());
 			if (slot == null)
 				continue;
 
@@ -128,42 +106,103 @@ public class EntityUtils {
 	}
 
 	// from ofbiz -> entity
-	public static <E extends EntityIdentifiable> void completeEntity(E entity, GenericValue genericValue) throws GeneralException {
+	public static <E extends EntityIdentifiable> void completeEntity(Context context, E entity, GenericValue genericValue) throws GeneralException {
 
-		Frame<E> frame = entity.isa();
 		for (Entry<String, Object> entry : genericValue.getAllFields().entrySet()) {
 
 			Object value = entry.getValue();
 			if (UtilValidate.isEmpty(value))
 				continue;
 
-			Slot slot = EntityUtils.getSlot(frame, entry.getKey());
-			if (slot == null)
-				continue;
-
-			value = toValue(slot, value);
-
-			entity.eSet(slot, value);
+			setEntitySlotValue(context, entity, entry.getKey(), value);
 		}
 	}
 
+	private static void setEntitySlotValue(Context context, Entity entity, String slotExpr, Object value) throws GeneralException {
+
+		Frame<?> frameInRole = entity.isa();
+		Entity entityInRole = entity;
+		Slot slotInRole = null;
+
+		String[] tokens = slotExpr.split("\\.");
+		switch (tokens.length) {
+		case 0:
+			break;
+		case 1:
+			slotInRole = getSlot(frameInRole, slotExpr);
+			break;
+		default:
+			int i = 0;
+			for (String token : tokens) {
+				i++;
+				if (Character.isUpperCase(token.charAt(0))) {
+					frameInRole = entityInRole.isa();
+					continue;
+				}
+
+				slotInRole = getSlot(frameInRole, token);
+				if (slotInRole == null)
+					break;
+
+				// shift entity
+				if (tokens.length > i) {
+					Domain domain = slotInRole.getDomain();
+					if (domain == null) {
+						slotInRole = null;
+						break;
+					}
+					frameInRole = context.getFrame(domain.getFrame());
+					if (frameInRole == null) {
+						slotInRole = null;
+						break;
+					}
+					if (!entityInRole.eIsSet(slotInRole)) {
+						Entity entitySlotValue = context.make(frameInRole);
+						entityInRole.eSet(slotInRole, entitySlotValue);
+						entityInRole = entitySlotValue;
+					}
+					else
+						entityInRole = (Entity) entityInRole.eGet(slotInRole, false, false);
+				}
+			}
+			break;
+		}
+
+		if (slotInRole == null)
+			return;
+
+		value = toEntityValue(slotInRole, value);
+		if (value != null) {
+			if (entityInRole.eIsSet(slotInRole)) {
+				Object slotValue = entityInRole.eGet(slotInRole, false, false);
+				if (slotValue instanceof EntityIdentifiable) {
+					EntityIdentifiable entitySlotValue = (EntityIdentifiable) slotValue;
+					entitySlotValue.eSetID(value.toString());
+				} else
+					return;
+			} else
+				entityInRole.eSet(slotInRole, value);
+		} else
+			entityInRole.eUnset(slotInRole);
+	}
+
 	// from ofbiz -> entity
-	public static Object toValue(Slot slot, Object bizValue) throws GeneralException {
+	public static Object toEntityValue(Slot slot, Object bizValue) throws GeneralException {
 
 		if (slot.getCardinality().isMultiple()) {
 			List<Object> values = new ArrayList<Object>();
 			if (bizValue instanceof Collection<?>) {
 				Collection<?> bizValues = (Collection<?>) bizValue;
 				for (Object object : bizValues)
-					values.add(toSingleValue(slot, object));
+					values.add(toSingleEntityValue(slot, object));
 			} else
-				values.add(toSingleValue(slot, bizValue));
+				values.add(toSingleEntityValue(slot, bizValue));
 			return values;
 		} else
-			return toSingleValue(slot, bizValue);
+			return toSingleEntityValue(slot, bizValue);
 	}
 
-	private static Object toSingleValue(Slot slot, Object bizValue) throws GeneralException {
+	private static Object toSingleEntityValue(Slot slot, Object bizValue) throws GeneralException {
 
 		if (bizValue instanceof String && slot.getDataType().equals(DataType.BOOLEAN)) {
 			if (bizValue.toString().equalsIgnoreCase("Y"))

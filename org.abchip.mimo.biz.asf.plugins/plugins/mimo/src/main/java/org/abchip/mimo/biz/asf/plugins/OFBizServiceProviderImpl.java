@@ -98,7 +98,7 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 				continue;
 
 			try {
-				value = EntityUtils.toValue(slot, value);
+				value = EntityUtils.toEntityValue(slot, value);
 				response.eSet(slot, value);
 			} catch (Exception e) {
 				throw new ServiceException(e);
